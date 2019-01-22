@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapxus Visual</title>
+    <link href="https://api.mapxus.cn/bvs/beeview-0.4.0.css" rel="stylesheet">
+    <script src="https://api.mapxus.cn/bvs/beeview-0.4.0.js" type="text/javascript"></script>
+    <style>
+        body {
+            background-color: silver;
+            margin: 0;
+            padding: 0;
+        }
+
+        .visualView-wrapper {
+            margin: 0 auto;
+        }
+
+        .SequenceContainer {
+            z-index: 20;
+            top: 5px;
+        }
+
+        .Direction {
+            width: 36px;
+            height: 36px;
+        }
+
+        .DirectionForward {
+            top: 35px;
+        }
+
+        .DirectionTurnleft {
+            top: 35px;
+        }
+
+        .DirectionTurnright {
+            top: 35px;
+        }
+
+        .NavigationComponent {
+            z-index: 15;
+        }
+
+        .BearingIndicator {
+            right: 74px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- embed starts here-->
+<style>
+    .visualView-wrapper {
+        position: absolute;
+        background-color: grey;
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    #visualView {
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .mapillary-js {
+        width: 100%;
+        height: 100%;
+    }
+
+    .SequenceContainer {
+        margin-top: 5%;
+    }
+
+</style>
+
+<div class="visualView-wrapper">
+    <div id="visualView"></div>
+</div>
+<script>
+
+        var componentOptions = null;
+
+        if (Beeview.isSupported()) {
+            // Enable or disable any components, e.g. tag and popup which requires WebGL support
+            // or use the default components by not supplying any component options.
+            componentOptions = { /* Default options */ };
+        } else if (Beeview.isFallbackSupported()) {
+            // On top of the disabled components below, also the popup, marker and tag
+            // components require WebGL support and should not be enabled (they are
+            // disabled by default so does not need to be specified below).
+            componentOptions = {
+                cover: false,
+                image: false,
+                stats: false,
+                tag: true,
+                marker: true,
+                direction: false,
+                bearing: false,
+            }
+        }
+
+        if (componentOptions === null) {
+            // Handle the fact that Beeview is not supported in a way that is
+            // appropriate for your application.
+            var messageDiv = document.createElement('div');
+            messageDiv.innerHTML = "Beeview is not supported by your browser.";
+            messageDiv.style.marginTop = "100px";
+
+            var visualViewDiv = document.getElementById('visualView');
+            visualViewDiv.style.textAlign = "center";
+            visualViewDiv.appendChild(messageDiv);
+        } else {
+            // Deactivate cover without interaction needed.
+            componentOptions.cover = false;
+
+            var visualView = new Beeview.Viewer(
+                'visualView',
+                null,
+                null,
+                { component: componentOptions });
+        }
+<!--        visualView.moveCloseTo(22.297571, 114.173729, 'B1', 'k11_hk_59f074');-->
+<!--        visualView.moveToKey('77b0e0095668c786fa4fc94df3ed3772');-->
+<!--        visualView.deactivateComponent('bearing');-->
+</script>
+<!-- embed ends here-->
+</body>
+</html>

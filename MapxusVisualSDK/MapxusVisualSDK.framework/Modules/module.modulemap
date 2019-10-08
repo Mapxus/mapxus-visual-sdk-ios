@@ -1,0 +1,6 @@
+framework module MapxusVisualSDK {
+  umbrella header "MapxusVisualSDK.h"
+
+  export *
+  module * { export * }
+}

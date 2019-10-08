@@ -1,9 +1,9 @@
 //
-//  MXMNodelist.h
+//  MXMNodeGroup.h
 //  MapxusVisualSDK
 //
-//  Created by Chenghao Guo on 2019/1/7.
-//  Copyright © 2019年 MAPHIVE TECHNOLOGY LIMITED. All rights reserved.
+//  Created by Chenghao Guo on 2019/9/16.
+//  Copyright © 2019 MAPHIVE TECHNOLOGY LIMITED. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,22 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 /**
- <#Description#>
+ Node list class
  */
-@interface MXMNodelist : NSObject
+@interface MXMNodeGroup : NSObject
 
-
-/**
- <#Description#>
- */
+/// The floor where the nodes print on
 @property (nonatomic, strong) NSString *floor;
-
-
-/**
- <#Description#>
- */
+/// Printting nodes
 @property (nonatomic, strong) NSArray<MXMNode *> *nodes;
 
 @end

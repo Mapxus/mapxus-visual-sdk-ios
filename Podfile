@@ -7,7 +7,6 @@ target 'MapxusVisualSDK' do
 
   # Pods for MapxusVisualSDK
   pod 'MapxusBaseSDK', :path => '../mapxus-base-sdk-ios'
-  pod 'Mapbox-iOS-SDK'
   
   target 'MapxusVisualSDKTests' do
     inherit! :search_paths

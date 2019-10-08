@@ -9,6 +9,7 @@
 #import "MXMVisualView.h"
 #import <WebKit/WebKit.h>
 #import "JXJsonFunctionDefine.h"
+#import "MXMMapServices+Private.h"
 
 @interface MXMVisualView () <WKNavigationDelegate, WKScriptMessageHandler> {
     WKWebView* _webview;
@@ -25,7 +26,7 @@
 
 @implementation MXMVisualView
 
-- (void)loadVisualView
+- (void)loadVisualViewWithFristImg:(nullable NSString *)imgId
 {
     _isWebviewLoaded = NO;
     _jsQueue = [[NSMutableArray alloc] init];
@@ -40,10 +41,11 @@
     [configuration setUserContentController:userContentController];
     configuration.allowsPictureInPictureMediaPlayback = YES;
     
-    _webview = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) configuration:configuration];
+    _webview = [[WKWebView alloc] initWithFrame:self.bounds configuration:configuration];
     _webview.navigationDelegate = self;
-    _webview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self addSubview:_webview];
+
+    _webview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     NSBundle *bundle = [NSBundle bundleForClass:[MXMVisualView class]];
     NSString *path = [bundle pathForResource:@"MXMVisualBrowse" ofType:@"html"];
@@ -52,11 +54,19 @@
     [_webview loadRequest:request];
     _webview.scrollView.bounces = NO;
 
-    // add visualView Listen
+    // initialize visual and add visualView Listen
+    NSString *bundleId = [[NSBundle mainBundle] bundleIdentifier];
+    
     NSMutableString* js = [[NSMutableString alloc] init];
-    [js appendString:@"visualView.on('loadingchanged', function(e){window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'loadingchanged', loadingchanged:e});});"];
-    [js appendString:@"visualView.on('bearingchanged', function(e){window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'bearingchanged', bearing:e});});"];
-    [js appendString:@"visualView.on('nodechanged', function(e){window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'nodechanged', buildingId:e.building.id, floor:e.floor.code, lat:e.latLon.lat, lon:e.latLon.lon, ca:e.ca, key:e.key });});"];
+    if (imgId) {
+        [js appendString:[NSString stringWithFormat:@"initializeVisualViewWithAppId('%@', '%@', '%@', '%@');", [MXMMapServices sharedServices].apiKey, [MXMMapServices sharedServices].secret, bundleId, imgId]];
+    } else {
+        [js appendString:[NSString stringWithFormat:@"initializeVisualViewWithAppId('%@', '%@', '%@');", [MXMMapServices sharedServices].apiKey, [MXMMapServices sharedServices].secret, bundleId]];
+    }
+    [js appendString:@"visualView.on('loadingchanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'loadingchanged', loadingchanged:e}); });"];
+    [js appendString:@"visualView.on('bearingchanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'bearingchanged', bearing:e}); });"];
+    [js appendString:@"visualView.on('nodechanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'nodechanged', buildingId:e.building.id, floor:e.floor.code, lat:e.latLon.lat, lon:e.latLon.lon, ca:e.ca, key:e.key }); });"];
+    [js appendString:@"visualView.renderComplete(function(){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'renderComplete'}); });"];
     [self executeJS:js];
 }
 
@@ -72,7 +82,7 @@
 
 - (void)moveCloseToBuilding:(NSString *)buildingId floor:(NSString *)floor latitude:(double)latitude longitude:(double)longitude
 {
-    [self executeJS:[NSString stringWithFormat:@"visualView.moveCloseTo(%@, %@, '%@', '%@')", @(latitude), @(longitude), floor, buildingId]];
+    [self executeJS:[NSString stringWithFormat:@"visualView.moveCloseTo(%@, %@, '%@', '%@', 20)", @(latitude), @(longitude), floor, buildingId]];
 }
 
 - (void)resize
@@ -90,13 +100,13 @@
     [self executeJS:[NSString stringWithFormat:@"visualView.setBearing(%@)", @(bearing)]];
 }
 
-- (void)getCenter:(void (^)(MXMVisualCoordinate2D center))block
+- (void)getVisualCenter:(void (^)(MXMVisualCoordinate2D center))block
 {
     _centerBlock = block;
     [self executeJS:@"visualView.getCenter().then((e) => {window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'getCenter', center:e});})"];
 }
 
-- (void)setCenter:(MXMVisualCoordinate2D)center
+- (void)setVisualCenter:(MXMVisualCoordinate2D)center
 {
     [self executeJS:[NSString stringWithFormat:@"visualView.setCenter([%@, %@])", @(center.x), @(center.y)]];
 }
@@ -204,6 +214,7 @@
     else if ([body[@"type"] isEqualToString:@"nodechanged"]) {
         
         if ([self.delegate respondsToSelector:@selector(visualView:didNodeChanged:)]) {
+            // body dictionary is get from web, so it is not same with [MXMNode toJson]
             MXMNode *node = [[MXMNode alloc] init];
             node.key = DecodeStringFromDic(body, @"key");
             node.buildingId = DecodeStringFromDic(body, @"buildingId");
@@ -226,6 +237,11 @@
         
         double zoom = [DecodeNumberFromDic(body, @"zoom") doubleValue];
         _zoomBlock(zoom);
+    }
+    else if ([body[@"type"] isEqualToString:@"renderComplete"]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(visualViewRenderComplete:)]) {
+            [self.delegate visualViewRenderComplete:self];
+        }
     }
 }
 

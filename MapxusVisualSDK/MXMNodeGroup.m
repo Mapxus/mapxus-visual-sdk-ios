@@ -1,15 +1,15 @@
 //
-//  MXMNodelist.m
+//  MXMNodeGroup.m
 //  MapxusVisualSDK
 //
-//  Created by Chenghao Guo on 2019/1/7.
-//  Copyright © 2019年 MAPHIVE TECHNOLOGY LIMITED. All rights reserved.
+//  Created by Chenghao Guo on 2019/9/16.
+//  Copyright © 2019 MAPHIVE TECHNOLOGY LIMITED. All rights reserved.
 //
 
-#import "MXMNodelist.h"
+#import "MXMNodeGroup.h"
 #import <YYModel/YYModel.h>
 
-@implementation MXMNodelist
+@implementation MXMNodeGroup
 
 + (NSDictionary *)modelCustomPropertyMapper {
     return @{

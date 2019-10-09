@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Mapxus" => "developer@maphive.io" }
   s.platform     = :ios, "9.0"
-  s.source       = { :path => '../mapxus-visual-sdk-ios' }
+  s.source       = { :git => 'https://github.com/MapxusSample/mapxus-visual-sdk-ios.git', :tag => "#{s.version}" }
   s.requires_arc = true
   s.module_name  = "MapxusVisualSDK"
   s.vendored_frameworks = "MapxusVisualSDK/MapxusVisualSDK.framework"

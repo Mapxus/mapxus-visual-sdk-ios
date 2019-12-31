@@ -1,10 +1,4 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
   - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -12,10 +6,11 @@ PODS:
   - AFNetworking/Reachability (3.2.1)
   - AFNetworking/Security (3.2.1)
   - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
-  - MapxusBaseSDK (3.7.0):
-    - AFNetworking (~> 3.2.1)
+  - MapxusBaseSDK (3.9.0):
+    - AFNetworking/NSURLSession (~> 3.2)
+    - AFNetworking/Reachability (~> 3.2)
+    - AFNetworking/Security (~> 3.2)
+    - AFNetworking/Serialization (~> 3.2)
     - YYModel (~> 1.0.4)
   - YYModel (1.0.4)
 
@@ -23,7 +18,7 @@ DEPENDENCIES:
   - MapxusBaseSDK (from `../mapxus-base-sdk-ios`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - YYModel
 
@@ -33,9 +28,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  MapxusBaseSDK: 251991e5145acb4b8397ca4ae63a34306661d216
+  MapxusBaseSDK: 27b05a88dfb2eb5e2c2d15b2cd87e8a1199564f8
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4fd7205d8b428d71aa1ad84be04d1fa32fcf8962
+PODFILE CHECKSUM: 73ba2b6636deb614787e4125355b035f900c1c46
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

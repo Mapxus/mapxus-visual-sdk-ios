@@ -85,6 +85,7 @@
 		D698710E2328D29B00D34F1A /* MXMVisualSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualSearch.m; sourceTree = "<group>"; };
 		D698711A232F61E000D34F1A /* MXMNodeGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMNodeGroup.h; sourceTree = "<group>"; };
 		D698711B232F61E000D34F1A /* MXMNodeGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMNodeGroup.m; sourceTree = "<group>"; };
+		D6BD2CFF253834B40028CADB /* AutoRun.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoRun.sh; sourceTree = SOURCE_ROOT; };
 		D6F5C956234C47F700EDCB56 /* MXMLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMLoggerService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +166,7 @@
 		D66A7D7021A26C0300A34136 /* MapxusVisualSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D6BD2CFF253834B40028CADB /* AutoRun.sh */,
 				D61B132A21B51B340066E774 /* IOS-Universal-Framework_aggregate.sh */,
 				D66A7D7221A26C0300A34136 /* Info.plist */,
 				D66A7DD821A2965A00A34136 /* Resources */,

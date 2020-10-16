@@ -79,5 +79,6 @@ then
 fi
 
 #打包并复制到目录
+pod install
 xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$FRAMEWORK_DIR"
 

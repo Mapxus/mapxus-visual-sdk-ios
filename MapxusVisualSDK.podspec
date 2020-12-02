@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MapxusVisualSDK"
-  s.version      = "3.16.0"
+  s.version      = "3.16.1"
   s.summary      = "Indoor visual map sdk"
   s.description  = <<-DESC
                    Provide indoor visualization services.
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name  = "MapxusVisualSDK"
   s.vendored_frameworks = "MapxusVisualSDK/MapxusVisualSDK.framework"
-  s.dependency "MapxusBaseSDK", "3.16.0"
+  s.dependency "MapxusBaseSDK", "3.16.1"
 
 end

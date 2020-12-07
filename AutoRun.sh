@@ -27,14 +27,12 @@ do
         if [ $OPTARG == "test" ]
         then
             ENV="test"
-        else
-            ENV="prod"
         fi
         ;;
         c)
         if [ $OPTARG == "landsd" ]
         then
-            COM="-landsd"
+            COM="landsd"
         fi
         ;;
         ?)
@@ -50,14 +48,26 @@ done
 #"https://web-sdk.mapxus.com/test/mapxus-visual-1.7.1.css"
 #"https://web-sdk.mapxus.com/test/mapxus-visual-1.7.1.js"
 
-#"https://web-sdk-landsd.mapxus.com/prod/mapxus-visual-1.7.1.css"
-#"https://web-sdk-landsd.mapxus.com/prod/mapxus-visual-1.7.1.js"
+CSS_URL=""
+JS_URL=""
 
-#"https://web-sdk-landsd.mapxus.com/test/mapxus-visual-1.7.1.css"
-#"https://web-sdk-landsd.mapxus.com/test/mapxus-visual-1.7.1.js"
+if [[ -z $COM ]] && [[ -z $ENV ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.js"
+    
+elif [[ -z $COM ]] && [[ $ENV == "test" ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.js"
+    
+elif [[ $COM == "landsd" ]] && [[ -z $ENV ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.js"
 
-CSS_URL="https:\/\/web-sdk${COM}.mapxus.com\/${ENV}\/mapxus-visual-1.7.1.css"
-JS_URL="https:\/\/web-sdk${COM}.mapxus.com\/${ENV}\/mapxus-visual-1.7.1.js"
+elif [[ $COM == "landsd" ]] && [[ $ENV == "test" ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.js"
+
+fi
 
 #
 Orgin='<link href=.*rel="stylesheet">'

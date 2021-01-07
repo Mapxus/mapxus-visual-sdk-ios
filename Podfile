@@ -7,7 +7,7 @@ target 'MapxusVisualSDK' do
    inhibit_all_warnings!
 
   # Pods for MapxusVisualSDK
-  pod 'MapxusBaseSDK', :path => '../mapxus-base-sdk-ios'
+  pod 'MapxusBaseSDK', :path => '../mapxus-base-sdk-ios-template'
   
   target 'MapxusVisualSDKTests' do
     inherit! :search_paths

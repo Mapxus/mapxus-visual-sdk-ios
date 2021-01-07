@@ -81,11 +81,11 @@ New='<script src="'${JS_URL}'" type="text\/javascript"><\/script>'
 #替换地址
 sed -i '' "s/${Orgin}/${New}/g" MapxusVisualSDK/Resources/MXMVisualBrowse.html
 
-FRAMEWORK_DIR="$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios/MapxusVisualSDK"
+FRAMEWORK_DIR="$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios-template/dynamic"
 #目录如果不存在，则拉取github
 if [ ! -d "${FRAMEWORK_DIR}" ]
 then
-  git clone https://github.com/Mapxus/mapxus-visual-sdk-ios.git "$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios"
+  git clone git@gitee.com:150vb/mapxus-visual-sdk-ios-template.git "$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios-template"
 fi
 
 #打包并复制到目录

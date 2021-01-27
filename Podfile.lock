@@ -6,7 +6,7 @@ PODS:
   - AFNetworking/Reachability (4.0.1)
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
-  - MapxusBaseSDK (4.0.0):
+  - MapxusBaseSDK (3.18.0):
     - AFNetworking/NSURLSession (~> 4.0)
     - AFNetworking/Reachability (~> 4.0)
     - AFNetworking/Security (~> 4.0)
@@ -15,7 +15,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - MapxusBaseSDK (from `../mapxus-base-sdk-ios-template`)
+  - MapxusBaseSDK (from `../mapxus-base-sdk-ios`)
 
 SPEC REPOS:
   trunk:
@@ -24,13 +24,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   MapxusBaseSDK:
-    :path: "../mapxus-base-sdk-ios-template"
+    :path: "../mapxus-base-sdk-ios"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  MapxusBaseSDK: 9f9c3c07f5e7340dbf8af5ddb5729fe508c40b17
+  MapxusBaseSDK: b6ac4283e1fa99fffec7dd568a55348c1f3817be
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 0889138e053919dd55c4c3b7e6a1c4a1bce3b556
+PODFILE CHECKSUM: 73ba2b6636deb614787e4125355b035f900c1c46
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

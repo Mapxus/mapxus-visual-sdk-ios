@@ -50,22 +50,27 @@ done
 
 CSS_URL=""
 JS_URL=""
+XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
 
 if [[ -z $COM ]] && [[ -z $ENV ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.js"
-    
+    XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
+
 elif [[ -z $COM ]] && [[ $ENV == "test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.js"
-    
+    XCCONFIG_FILE='BuildConfig/mapxus.test.xcconfig'
+
 elif [[ $COM == "landsd" ]] && [[ -z $ENV ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.js"
+    XCCONFIG_FILE='BuildConfig/landsd.prod.xcconfig'
 
 elif [[ $COM == "landsd" ]] && [[ $ENV == "test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.js"
+    XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
 
 fi
 
@@ -90,5 +95,5 @@ fi
 
 #打包并复制到目录
 pod install
-xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$FRAMEWORK_DIR"
+xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$FRAMEWORK_DIR" XCCONFIG_FILE="$XCCONFIG_FILE"
 

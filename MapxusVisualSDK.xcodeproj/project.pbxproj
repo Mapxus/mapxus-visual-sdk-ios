@@ -70,6 +70,7 @@
 		D646763821A412C800018634 /* MXMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMConstants.h; sourceTree = "<group>"; };
 		D65B573021CA334E00142732 /* MXMNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMNode.h; sourceTree = "<group>"; };
 		D65B573121CA334E00142732 /* MXMNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMNode.m; sourceTree = "<group>"; };
+		D65E1B6D25EC9CAF00D78764 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
 		D66A7D6E21A26C0300A34136 /* MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66A7D7121A26C0300A34136 /* MapxusVisualSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapxusVisualSDK.h; sourceTree = "<group>"; };
 		D66A7D7221A26C0300A34136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +87,10 @@
 		D698711A232F61E000D34F1A /* MXMNodeGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMNodeGroup.h; sourceTree = "<group>"; };
 		D698711B232F61E000D34F1A /* MXMNodeGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMNodeGroup.m; sourceTree = "<group>"; };
 		D6BD2CFF253834B40028CADB /* AutoRun.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoRun.sh; sourceTree = SOURCE_ROOT; };
+		D6C5251025E8FF9C00FFDF86 /* landsd.test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = landsd.test.xcconfig; sourceTree = "<group>"; };
+		D6C5251125E8FF9C00FFDF86 /* landsd.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = landsd.prod.xcconfig; sourceTree = "<group>"; };
+		D6C5251225E8FF9C00FFDF86 /* mapxus.test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mapxus.test.xcconfig; sourceTree = "<group>"; };
+		D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mapxus.prod.xcconfig; sourceTree = "<group>"; };
 		D6F5C956234C47F700EDCB56 /* MXMLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMLoggerService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +151,7 @@
 		D66A7D6421A26C0300A34136 = {
 			isa = PBXGroup;
 			children = (
+				D6C5250E25E8FF9C00FFDF86 /* BuildConfig */,
 				D66A7D7021A26C0300A34136 /* MapxusVisualSDK */,
 				D66A7D7B21A26C0300A34136 /* MapxusVisualSDKTests */,
 				D66A7D6F21A26C0300A34136 /* Products */,
@@ -203,6 +209,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D6C5250E25E8FF9C00FFDF86 /* BuildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D65E1B6D25EC9CAF00D78764 /* common.xcconfig */,
+				D6C5251025E8FF9C00FFDF86 /* landsd.test.xcconfig */,
+				D6C5251125E8FF9C00FFDF86 /* landsd.prod.xcconfig */,
+				D6C5251225E8FF9C00FFDF86 /* mapxus.test.xcconfig */,
+				D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */,
+			);
+			path = BuildConfig;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -237,6 +255,7 @@
 				D66A7D6A21A26C0300A34136 /* Sources */,
 				D66A7D6B21A26C0300A34136 /* Frameworks */,
 				D66A7D6C21A26C0300A34136 /* Resources */,
+				D65E1B6E25EC9DDD00D78764 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -373,6 +392,23 @@
 			shellPath = /bin/sh;
 			shellScript = "bash \"${PROJECT_DIR}/IOS-Universal-Framework_aggregate.sh\"\n";
 		};
+		D65E1B6E25EC9DDD00D78764 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "## Generate the build number using current date and time\nbuildNumber=$(date \"+%Y%m.%d.%H%M\")\n## Set the build number in plist file\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,6 +463,7 @@
 		};
 		D66A7D8021A26C0300A34136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C5251225E8FF9C00FFDF86 /* mapxus.test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -489,6 +526,7 @@
 		};
 		D66A7D8121A26C0300A34136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -564,7 +602,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.20.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapxus.MapxusVisualSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -594,7 +632,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.20.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapxus.MapxusVisualSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;

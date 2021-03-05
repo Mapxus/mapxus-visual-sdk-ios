@@ -86,14 +86,20 @@ New='<script src="'${JS_URL}'" type="text\/javascript"><\/script>'
 #替换地址
 sed -i '' "s/${Orgin}/${New}/g" MapxusVisualSDK/Resources/MXMVisualBrowse.html
 
-FRAMEWORK_DIR="$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios/dynamic"
+FRAMEWORK_DIR="$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios"
 #目录如果不存在，则拉取github
 if [ ! -d "${FRAMEWORK_DIR}" ]
 then
-  git clone https://github.com/Mapxus/mapxus-visual-sdk-ios.git "$FRAMEWORK_ROOT_PATH/mapxus-visual-sdk-ios"
+  git clone https://github.com/Mapxus/mapxus-visual-sdk-ios.git "$FRAMEWORK_DIR"
+fi
+
+DYNAMIC_DIR="$FRAMEWORK_DIR/dynamic"
+if [ ! -d "${DYNAMIC_DIR}" ]
+then
+  mkdir $DYNAMIC_DIR
 fi
 
 #打包并复制到目录
 pod install
-xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$FRAMEWORK_DIR" XCCONFIG_FILE="$XCCONFIG_FILE"
+xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$DYNAMIC_DIR" XCCONFIG_FILE="$XCCONFIG_FILE"
 

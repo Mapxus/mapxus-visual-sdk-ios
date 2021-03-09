@@ -100,6 +100,10 @@ then
 fi
 
 #打包并复制到目录
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 pod install
 xcodebuild -workspace MapxusVisualSDK.xcworkspace -scheme MapxusVisualSDK-Universal POD_DIR="$DYNAMIC_DIR" XCCONFIG_FILE="$XCCONFIG_FILE"
 

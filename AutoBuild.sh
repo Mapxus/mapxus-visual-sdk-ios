@@ -53,23 +53,23 @@ JS_URL=""
 XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
 
 if [[ -z $COM ]] && [[ -z $ENV ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.7.1.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1.js"
     XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
 
 elif [[ -z $COM ]] && [[ $ENV == "test" ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.js"
     XCCONFIG_FILE='BuildConfig/mapxus.test.xcconfig'
 
 elif [[ $COM == "landsd" ]] && [[ -z $ENV ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.0-landsd.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.prod.xcconfig'
 
 elif [[ $COM == "landsd" ]] && [[ $ENV == "test" ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.7.1-beta.3-landsd.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
 
 fi

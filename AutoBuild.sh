@@ -14,7 +14,7 @@ COM=""
 # 手动使用本工具打包时，可以不传-d参数，使用本默认值
 FRAMEWORK_ROOT_PATH="${PWD}/.."
 
-# c: 公司，可选mapxus、landsd
+# c: 公司，可选mapxus、landsd、kawasaki
 # d: framework文件存放根目录
 # e: 环境，可选test、prod
 while getopts ":c:d:e:" opt
@@ -24,15 +24,15 @@ do
         FRAMEWORK_ROOT_PATH=$OPTARG
         ;;
         e)
-        if [ $OPTARG == "test" ]
-        then
-            ENV="test"
+        if [[ $OPTARG == "test" ]]; then
+            ENV="-test"
         fi
         ;;
         c)
-        if [ $OPTARG == "landsd" ]
-        then
-            COM="landsd"
+        if [[ $OPTARG == "landsd" ]]; then
+            COM="-landsd"
+        elif [[ $OPTARG == "kawasaki" ]]; then
+            COM="-kawasaki"
         fi
         ;;
         ?)
@@ -57,20 +57,25 @@ if [[ -z $COM ]] && [[ -z $ENV ]]; then
     JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1.js"
     XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
 
-elif [[ -z $COM ]] && [[ $ENV == "test" ]]; then
+elif [[ -z $COM ]] && [[ $ENV == "-test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.js"
     XCCONFIG_FILE='BuildConfig/mapxus.test.xcconfig'
 
-elif [[ $COM == "landsd" ]] && [[ -z $ENV ]]; then
+elif [[ $COM == "-landsd" ]] && [[ -z $ENV ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.prod.xcconfig'
 
-elif [[ $COM == "landsd" ]] && [[ $ENV == "test" ]]; then
+elif [[ $COM == "-landsd" ]] && [[ $ENV == "-test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
+
+elif [[ $COM == "-kawasaki" ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.8.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.8.1.js"
+    XCCONFIG_FILE='BuildConfig/kawasaki.prod.xcconfig'
 
 fi
 

@@ -95,6 +95,10 @@ elif [[ $COM == "-landsd" ]] && [[ -z $ENV ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.prod.xcconfig'
+    
+    REGION_DISTRIBUTION_PARENT_PATH="${GLOBAL_DISTRIBUTION_PARENT_PATH}/sdk-landsd"
+    REGION_DISTRIBUTION_ROOT_PATH="/mapxus-visual-sdk-ios-landsd"
+    REGION_DISTRIBUTION_URL='https://chenghaoguo@bitbucket.org/chenghaoguo/mapxus-visual-sdk-ios-landsd.git'
 
 elif [[ $COM == "-landsd" ]] && [[ $ENV == "-test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.css"

@@ -17,6 +17,6 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>202301.18.1619</string>
+	<string>202302.22.1410</string>
 </dict>
 </plist>

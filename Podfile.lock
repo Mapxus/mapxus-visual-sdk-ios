@@ -6,7 +6,7 @@ PODS:
   - AFNetworking/Reachability (4.0.1)
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
-  - MapxusBaseSDK (5.1.2):
+  - MapxusBaseSDK (6.0.0):
     - AFNetworking/NSURLSession (~> 4.0)
     - AFNetworking/Reachability (~> 4.0)
     - AFNetworking/Security (~> 4.0)
@@ -28,9 +28,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: e27fa2d9d7b9bd6cc4279ee0be09d063d5d9eef6
-  MapxusBaseSDK: 7c02d56f5a8a29c17d88047d29946c33808cac41
+  MapxusBaseSDK: ddf323613693242443f3b1dcbafd5c7e3ae3fde6
   YYModel: 47e490c065087c7c7ca264de8f2b418b28e77371
 
-PODFILE CHECKSUM: cced21b6fbd6a6552d99475ead71441a378070f1
+PODFILE CHECKSUM: 9ae95bc68cf2bfa0cdde81ef6f2e8cd6c9392b54
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

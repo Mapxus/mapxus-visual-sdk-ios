@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		D61B132B21B51B6D0066E774 /* MapxusVisualSDK-Universal */ = {
+		89E1348529E95B9800D954D1 /* MapxusVisualSDK-Universal */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D61B132C21B51B6D0066E774 /* Build configuration list for PBXAggregateTarget "MapxusVisualSDK-Universal" */;
+			buildConfigurationList = 89E1348629E95B9800D954D1 /* Build configuration list for PBXAggregateTarget "MapxusVisualSDK-Universal" */;
 			buildPhases = (
-				D61B132F21B51B770066E774 /* ShellScript */,
+				89E1348929E95B9C00D954D1 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -21,245 +21,246 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		86842BF0CBDAD526AB38E583 /* Pods_MapxusVisualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2166EFC6997589DC1439DF /* Pods_MapxusVisualSDK.framework */; };
-		AF4874B6E26E7360300798F0 /* Pods_MapxusVisualSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD6CB9B1567240E144FC2B /* Pods_MapxusVisualSDKTests.framework */; };
-		D646763921A412C800018634 /* MXMHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D646763421A412C800018634 /* MXMHttpManager.h */; };
-		D646763A21A412C800018634 /* JXJsonFunctionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D646763521A412C800018634 /* JXJsonFunctionDefine.h */; };
-		D646763B21A412C800018634 /* NSString+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = D646763621A412C800018634 /* NSString+Compare.h */; };
-		D646763C21A412C800018634 /* MXMMapServices+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D646763721A412C800018634 /* MXMMapServices+Private.h */; };
-		D646763D21A412C800018634 /* MXMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D646763821A412C800018634 /* MXMConstants.h */; };
-		D65B573221CA334E00142732 /* MXMNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D65B573021CA334E00142732 /* MXMNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D65B573321CA334E00142732 /* MXMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B573121CA334E00142732 /* MXMNode.m */; };
-		D66A7D7821A26C0300A34136 /* MapxusVisualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66A7D6E21A26C0300A34136 /* MapxusVisualSDK.framework */; };
-		D66A7D7D21A26C0300A34136 /* MapxusVisualSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A7D7C21A26C0300A34136 /* MapxusVisualSDKTests.m */; };
-		D66A7D7F21A26C0300A34136 /* MapxusVisualSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A7D7121A26C0300A34136 /* MapxusVisualSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D66A7DD121A2904C00A34136 /* MXMVisualView.h in Headers */ = {isa = PBXBuildFile; fileRef = D66A7DCF21A2904C00A34136 /* MXMVisualView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D66A7DD221A2904C00A34136 /* MXMVisualView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66A7DD021A2904C00A34136 /* MXMVisualView.m */; };
-		D66A7DD421A2923100A34136 /* MXMVisualBrowse.html in Resources */ = {isa = PBXBuildFile; fileRef = D66A7DD321A2923100A34136 /* MXMVisualBrowse.html */; };
-		D698710F2328D29B00D34F1A /* MXMVisualSearchOption.h in Headers */ = {isa = PBXBuildFile; fileRef = D69871092328D29B00D34F1A /* MXMVisualSearchOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D69871102328D29B00D34F1A /* MXMVisualSearchOption.m in Sources */ = {isa = PBXBuildFile; fileRef = D698710A2328D29B00D34F1A /* MXMVisualSearchOption.m */; };
-		D69871112328D29B00D34F1A /* MXMVisualSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = D698710B2328D29B00D34F1A /* MXMVisualSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D69871142328D29B00D34F1A /* MXMVisualSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = D698710E2328D29B00D34F1A /* MXMVisualSearch.m */; };
-		D698711C232F61E000D34F1A /* MXMNodeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = D698711A232F61E000D34F1A /* MXMNodeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D698711D232F61E000D34F1A /* MXMNodeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D698711B232F61E000D34F1A /* MXMNodeGroup.m */; };
-		D6F5C957234C47F700EDCB56 /* MXMLoggerService.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F5C956234C47F700EDCB56 /* MXMLoggerService.h */; };
+		888F85238748BB36D4784505 /* Pods_MapxusVisualSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED9855B55C64D64B073469 /* Pods_MapxusVisualSDKTests.framework */; };
+		89E1343329E94AB700D954D1 /* MapxusVisualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */; };
+		89E1343829E94AB700D954D1 /* MapxusVisualSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1343729E94AB700D954D1 /* MapxusVisualSDKTests.m */; };
+		89E1343929E94AB700D954D1 /* MapxusVisualSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1345529E94E0A00D954D1 /* MXMVisualSearchOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344229E94E0900D954D1 /* MXMVisualSearchOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1345629E94E0A00D954D1 /* MXMNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344329E94E0900D954D1 /* MXMNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1345729E94E0A00D954D1 /* MXMHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344529E94E0900D954D1 /* MXMHttpManager.h */; };
+		89E1345829E94E0A00D954D1 /* JXJsonFunctionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */; };
+		89E1345929E94E0A00D954D1 /* MXMLoggerService.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344729E94E0900D954D1 /* MXMLoggerService.h */; };
+		89E1345A29E94E0A00D954D1 /* NSString+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344829E94E0900D954D1 /* NSString+Compare.h */; };
+		89E1345B29E94E0A00D954D1 /* MXMMapServices+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */; };
+		89E1345C29E94E0A00D954D1 /* MXMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344A29E94E0900D954D1 /* MXMConstants.h */; };
+		89E1345D29E94E0A00D954D1 /* MXMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1344B29E94E0900D954D1 /* MXMNode.m */; };
+		89E1345E29E94E0A00D954D1 /* MXMVisualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1344C29E94E0900D954D1 /* MXMVisualView.m */; };
+		89E1345F29E94E0A00D954D1 /* MXMNodeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344D29E94E0900D954D1 /* MXMNodeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1346029E94E0A00D954D1 /* MXMVisualBrowse.html in Resources */ = {isa = PBXBuildFile; fileRef = 89E1344F29E94E0900D954D1 /* MXMVisualBrowse.html */; };
+		89E1346129E94E0A00D954D1 /* MXMVisualSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1345029E94E0900D954D1 /* MXMVisualSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1346229E94E0A00D954D1 /* MXMNodeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1345129E94E0900D954D1 /* MXMNodeGroup.m */; };
+		89E1346329E94E0A00D954D1 /* MXMVisualSearchOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1345229E94E0900D954D1 /* MXMVisualSearchOption.m */; };
+		89E1346429E94E0A00D954D1 /* MXMVisualView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1345329E94E0900D954D1 /* MXMVisualView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E1346529E94E0A00D954D1 /* MXMVisualSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1345429E94E0A00D954D1 /* MXMVisualSearch.m */; };
+		89E1348229E95B1600D954D1 /* MapxusBaseSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E1348129E95B1600D954D1 /* MapxusBaseSDK.xcframework */; };
+		CDF9F2ED676016F292576125 /* Pods_MapxusVisualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D66A7D7921A26C0300A34136 /* PBXContainerItemProxy */ = {
+		89E1343429E94AB700D954D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D66A7D6521A26C0300A34136 /* Project object */;
+			containerPortal = 89E1342129E94AB700D954D1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D66A7D6D21A26C0300A34136;
+			remoteGlobalIDString = 89E1342929E94AB700D954D1;
 			remoteInfo = MapxusVisualSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11C1DA5AA2405DC67E38D9DE /* Pods-MapxusVisualSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		21FD6CB9B1567240E144FC2B /* Pods_MapxusVisualSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BC183440235611F2FCBDF8C /* Pods-MapxusVisualSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4C2166EFC6997589DC1439DF /* Pods_MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56FBCBC52B08FB1D51B724FA /* Pods-MapxusVisualSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.release.xcconfig"; sourceTree = "<group>"; };
-		BAEA7A8C2FF7F8B21F9F3CF0 /* Pods-MapxusVisualSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		D61B132A21B51B340066E774 /* IOS-Universal-Framework_aggregate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "IOS-Universal-Framework_aggregate.sh"; sourceTree = SOURCE_ROOT; };
-		D646763421A412C800018634 /* MXMHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMHttpManager.h; sourceTree = "<group>"; };
-		D646763521A412C800018634 /* JXJsonFunctionDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXJsonFunctionDefine.h; sourceTree = "<group>"; };
-		D646763621A412C800018634 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
-		D646763721A412C800018634 /* MXMMapServices+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXMMapServices+Private.h"; sourceTree = "<group>"; };
-		D646763821A412C800018634 /* MXMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMConstants.h; sourceTree = "<group>"; };
-		D65B573021CA334E00142732 /* MXMNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMNode.h; sourceTree = "<group>"; };
-		D65B573121CA334E00142732 /* MXMNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMNode.m; sourceTree = "<group>"; };
-		D65E1B6D25EC9CAF00D78764 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
-		D65E1BA425F092EB00D78764 /* UploadCocoapods.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = UploadCocoapods.sh; sourceTree = "<group>"; };
-		D65F9DE62728F386008E68EE /* kawasaki.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = kawasaki.prod.xcconfig; sourceTree = "<group>"; };
-		D66A7D6E21A26C0300A34136 /* MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D66A7D7121A26C0300A34136 /* MapxusVisualSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapxusVisualSDK.h; sourceTree = "<group>"; };
-		D66A7D7221A26C0300A34136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D66A7D7721A26C0300A34136 /* MapxusVisualSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapxusVisualSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D66A7D7C21A26C0300A34136 /* MapxusVisualSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapxusVisualSDKTests.m; sourceTree = "<group>"; };
-		D66A7D7E21A26C0300A34136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D66A7DCF21A2904C00A34136 /* MXMVisualView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMVisualView.h; sourceTree = "<group>"; };
-		D66A7DD021A2904C00A34136 /* MXMVisualView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMVisualView.m; sourceTree = "<group>"; };
-		D66A7DD321A2923100A34136 /* MXMVisualBrowse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MXMVisualBrowse.html; sourceTree = "<group>"; };
-		D69871092328D29B00D34F1A /* MXMVisualSearchOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMVisualSearchOption.h; sourceTree = "<group>"; };
-		D698710A2328D29B00D34F1A /* MXMVisualSearchOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualSearchOption.m; sourceTree = "<group>"; };
-		D698710B2328D29B00D34F1A /* MXMVisualSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMVisualSearch.h; sourceTree = "<group>"; };
-		D698710E2328D29B00D34F1A /* MXMVisualSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualSearch.m; sourceTree = "<group>"; };
-		D698711A232F61E000D34F1A /* MXMNodeGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXMNodeGroup.h; sourceTree = "<group>"; };
-		D698711B232F61E000D34F1A /* MXMNodeGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXMNodeGroup.m; sourceTree = "<group>"; };
-		D6BD2CFF253834B40028CADB /* AutoBuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoBuild.sh; sourceTree = SOURCE_ROOT; };
-		D6C5251025E8FF9C00FFDF86 /* landsd.test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = landsd.test.xcconfig; sourceTree = "<group>"; };
-		D6C5251125E8FF9C00FFDF86 /* landsd.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = landsd.prod.xcconfig; sourceTree = "<group>"; };
-		D6C5251225E8FF9C00FFDF86 /* mapxus.test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mapxus.test.xcconfig; sourceTree = "<group>"; };
-		D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mapxus.prod.xcconfig; sourceTree = "<group>"; };
-		D6F5C956234C47F700EDCB56 /* MXMLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMLoggerService.h; sourceTree = "<group>"; };
+		02ED9855B55C64D64B073469 /* Pods_MapxusVisualSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CFE7D3EA59E24F6E841186 /* Pods-MapxusVisualSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.release.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.release.xcconfig"; sourceTree = "<group>"; };
+		1FC1CB85783DB2E40F02015B /* Pods-MapxusVisualSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapxusVisualSDK.h; sourceTree = "<group>"; };
+		89E1343229E94AB700D954D1 /* MapxusVisualSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapxusVisualSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E1343729E94AB700D954D1 /* MapxusVisualSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapxusVisualSDKTests.m; sourceTree = "<group>"; };
+		89E1344229E94E0900D954D1 /* MXMVisualSearchOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMVisualSearchOption.h; sourceTree = "<group>"; };
+		89E1344329E94E0900D954D1 /* MXMNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMNode.h; sourceTree = "<group>"; };
+		89E1344529E94E0900D954D1 /* MXMHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMHttpManager.h; sourceTree = "<group>"; };
+		89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXJsonFunctionDefine.h; sourceTree = "<group>"; };
+		89E1344729E94E0900D954D1 /* MXMLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMLoggerService.h; sourceTree = "<group>"; };
+		89E1344829E94E0900D954D1 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
+		89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXMMapServices+Private.h"; sourceTree = "<group>"; };
+		89E1344A29E94E0900D954D1 /* MXMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMConstants.h; sourceTree = "<group>"; };
+		89E1344B29E94E0900D954D1 /* MXMNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMNode.m; sourceTree = "<group>"; };
+		89E1344C29E94E0900D954D1 /* MXMVisualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualView.m; sourceTree = "<group>"; };
+		89E1344D29E94E0900D954D1 /* MXMNodeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMNodeGroup.h; sourceTree = "<group>"; };
+		89E1344F29E94E0900D954D1 /* MXMVisualBrowse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MXMVisualBrowse.html; sourceTree = "<group>"; };
+		89E1345029E94E0900D954D1 /* MXMVisualSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMVisualSearch.h; sourceTree = "<group>"; };
+		89E1345129E94E0900D954D1 /* MXMNodeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMNodeGroup.m; sourceTree = "<group>"; };
+		89E1345229E94E0900D954D1 /* MXMVisualSearchOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualSearchOption.m; sourceTree = "<group>"; };
+		89E1345329E94E0900D954D1 /* MXMVisualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMVisualView.h; sourceTree = "<group>"; };
+		89E1345429E94E0A00D954D1 /* MXMVisualSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualSearch.m; sourceTree = "<group>"; };
+		89E1346629E95ABA00D954D1 /* IOS-Universal-Framework_aggregate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "IOS-Universal-Framework_aggregate.sh"; sourceTree = "<group>"; };
+		89E1346729E95ABA00D954D1 /* UploadCocoapods.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = UploadCocoapods.sh; sourceTree = "<group>"; };
+		89E1346829E95ABA00D954D1 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		89E1346B29E95ABA00D954D1 /* kawasaki.prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = kawasaki.prod.xcconfig; sourceTree = "<group>"; };
+		89E1346C29E95ABA00D954D1 /* common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = common.xcconfig; sourceTree = "<group>"; };
+		89E1346E29E95ABA00D954D1 /* mapxus.prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mapxus.prod.xcconfig; sourceTree = "<group>"; };
+		89E1346F29E95ABA00D954D1 /* landsd.prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = landsd.prod.xcconfig; sourceTree = "<group>"; };
+		89E1347029E95ABA00D954D1 /* mapxus.test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mapxus.test.xcconfig; sourceTree = "<group>"; };
+		89E1347129E95ABA00D954D1 /* landsd.test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = landsd.test.xcconfig; sourceTree = "<group>"; };
+		89E1347329E95ABA00D954D1 /* AutoBuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoBuild.sh; sourceTree = "<group>"; };
+		89E1348129E95B1600D954D1 /* MapxusBaseSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapxusBaseSDK.xcframework; path = "../mapxus-base-sdk-ios/dynamic/MapxusBaseSDK.xcframework"; sourceTree = "<group>"; };
+		BB40138B5A842DA3B18FD6BA /* Pods-MapxusVisualSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.debug.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		FDBD4C8D1AF7F8AFB5DD71B6 /* Pods-MapxusVisualSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.release.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D66A7D6B21A26C0300A34136 /* Frameworks */ = {
+		89E1342729E94AB700D954D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86842BF0CBDAD526AB38E583 /* Pods_MapxusVisualSDK.framework in Frameworks */,
+				CDF9F2ED676016F292576125 /* Pods_MapxusVisualSDK.framework in Frameworks */,
+				89E1348229E95B1600D954D1 /* MapxusBaseSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D66A7D7421A26C0300A34136 /* Frameworks */ = {
+		89E1342F29E94AB700D954D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66A7D7821A26C0300A34136 /* MapxusVisualSDK.framework in Frameworks */,
-				AF4874B6E26E7360300798F0 /* Pods_MapxusVisualSDKTests.framework in Frameworks */,
+				89E1343329E94AB700D954D1 /* MapxusVisualSDK.framework in Frameworks */,
+				888F85238748BB36D4784505 /* Pods_MapxusVisualSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17D98EC83174DE0EE8611658 /* Frameworks */ = {
+		8898230FBB46EF59727EF0FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4C2166EFC6997589DC1439DF /* Pods_MapxusVisualSDK.framework */,
-				21FD6CB9B1567240E144FC2B /* Pods_MapxusVisualSDKTests.framework */,
+				BB40138B5A842DA3B18FD6BA /* Pods-MapxusVisualSDK.debug.xcconfig */,
+				17CFE7D3EA59E24F6E841186 /* Pods-MapxusVisualSDK.release.xcconfig */,
+				1FC1CB85783DB2E40F02015B /* Pods-MapxusVisualSDKTests.debug.xcconfig */,
+				FDBD4C8D1AF7F8AFB5DD71B6 /* Pods-MapxusVisualSDKTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		419E766F4C30A40C5C6F9A77 /* Pods */ = {
+		89E1342029E94AB700D954D1 = {
 			isa = PBXGroup;
 			children = (
-				11C1DA5AA2405DC67E38D9DE /* Pods-MapxusVisualSDK.debug.xcconfig */,
-				56FBCBC52B08FB1D51B724FA /* Pods-MapxusVisualSDK.release.xcconfig */,
-				4BC183440235611F2FCBDF8C /* Pods-MapxusVisualSDKTests.debug.xcconfig */,
-				BAEA7A8C2FF7F8B21F9F3CF0 /* Pods-MapxusVisualSDKTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D646763321A412C800018634 /* BasePrivate */ = {
-			isa = PBXGroup;
-			children = (
-				D6F5C956234C47F700EDCB56 /* MXMLoggerService.h */,
-				D646763821A412C800018634 /* MXMConstants.h */,
-				D646763421A412C800018634 /* MXMHttpManager.h */,
-				D646763621A412C800018634 /* NSString+Compare.h */,
-				D646763521A412C800018634 /* JXJsonFunctionDefine.h */,
-				D646763721A412C800018634 /* MXMMapServices+Private.h */,
-			);
-			path = BasePrivate;
-			sourceTree = "<group>";
-		};
-		D66A7D6421A26C0300A34136 = {
-			isa = PBXGroup;
-			children = (
-				D6C5250E25E8FF9C00FFDF86 /* BuildConfig */,
-				D6BD2CFF253834B40028CADB /* AutoBuild.sh */,
-				D65E1BA425F092EB00D78764 /* UploadCocoapods.sh */,
-				D61B132A21B51B340066E774 /* IOS-Universal-Framework_aggregate.sh */,
-				D66A7D7021A26C0300A34136 /* MapxusVisualSDK */,
-				D66A7D7B21A26C0300A34136 /* MapxusVisualSDKTests */,
-				D66A7D6F21A26C0300A34136 /* Products */,
-				419E766F4C30A40C5C6F9A77 /* Pods */,
-				17D98EC83174DE0EE8611658 /* Frameworks */,
+				89E1346829E95ABA00D954D1 /* Gemfile */,
+				89E1346929E95ABA00D954D1 /* BuildConfig */,
+				89E1347329E95ABA00D954D1 /* AutoBuild.sh */,
+				89E1346629E95ABA00D954D1 /* IOS-Universal-Framework_aggregate.sh */,
+				89E1346729E95ABA00D954D1 /* UploadCocoapods.sh */,
+				89E1342C29E94AB700D954D1 /* MapxusVisualSDK */,
+				89E1343629E94AB700D954D1 /* MapxusVisualSDKTests */,
+				89E1342B29E94AB700D954D1 /* Products */,
+				8898230FBB46EF59727EF0FF /* Pods */,
+				F7E8061466C4C89A407D1B29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D66A7D6F21A26C0300A34136 /* Products */ = {
+		89E1342B29E94AB700D954D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D66A7D6E21A26C0300A34136 /* MapxusVisualSDK.framework */,
-				D66A7D7721A26C0300A34136 /* MapxusVisualSDKTests.xctest */,
+				89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */,
+				89E1343229E94AB700D954D1 /* MapxusVisualSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D66A7D7021A26C0300A34136 /* MapxusVisualSDK */ = {
+		89E1342C29E94AB700D954D1 /* MapxusVisualSDK */ = {
 			isa = PBXGroup;
 			children = (
-				D66A7D7221A26C0300A34136 /* Info.plist */,
-				D66A7DD821A2965A00A34136 /* Resources */,
-				D646763321A412C800018634 /* BasePrivate */,
-				D66A7D7121A26C0300A34136 /* MapxusVisualSDK.h */,
-				D66A7DCF21A2904C00A34136 /* MXMVisualView.h */,
-				D66A7DD021A2904C00A34136 /* MXMVisualView.m */,
-				D65B573021CA334E00142732 /* MXMNode.h */,
-				D65B573121CA334E00142732 /* MXMNode.m */,
-				D698711A232F61E000D34F1A /* MXMNodeGroup.h */,
-				D698711B232F61E000D34F1A /* MXMNodeGroup.m */,
-				D698710B2328D29B00D34F1A /* MXMVisualSearch.h */,
-				D698710E2328D29B00D34F1A /* MXMVisualSearch.m */,
-				D69871092328D29B00D34F1A /* MXMVisualSearchOption.h */,
-				D698710A2328D29B00D34F1A /* MXMVisualSearchOption.m */,
+				89E1344E29E94E0900D954D1 /* Resources */,
+				89E1344429E94E0900D954D1 /* BasePrivate */,
+				89E1344329E94E0900D954D1 /* MXMNode.h */,
+				89E1344B29E94E0900D954D1 /* MXMNode.m */,
+				89E1344D29E94E0900D954D1 /* MXMNodeGroup.h */,
+				89E1345129E94E0900D954D1 /* MXMNodeGroup.m */,
+				89E1345029E94E0900D954D1 /* MXMVisualSearch.h */,
+				89E1345429E94E0A00D954D1 /* MXMVisualSearch.m */,
+				89E1344229E94E0900D954D1 /* MXMVisualSearchOption.h */,
+				89E1345229E94E0900D954D1 /* MXMVisualSearchOption.m */,
+				89E1345329E94E0900D954D1 /* MXMVisualView.h */,
+				89E1344C29E94E0900D954D1 /* MXMVisualView.m */,
+				89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */,
 			);
 			path = MapxusVisualSDK;
 			sourceTree = "<group>";
 		};
-		D66A7D7B21A26C0300A34136 /* MapxusVisualSDKTests */ = {
+		89E1343629E94AB700D954D1 /* MapxusVisualSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				D66A7D7C21A26C0300A34136 /* MapxusVisualSDKTests.m */,
-				D66A7D7E21A26C0300A34136 /* Info.plist */,
+				89E1343729E94AB700D954D1 /* MapxusVisualSDKTests.m */,
 			);
 			path = MapxusVisualSDKTests;
 			sourceTree = "<group>";
 		};
-		D66A7DD821A2965A00A34136 /* Resources */ = {
+		89E1344429E94E0900D954D1 /* BasePrivate */ = {
 			isa = PBXGroup;
 			children = (
-				D66A7DD321A2923100A34136 /* MXMVisualBrowse.html */,
+				89E1344529E94E0900D954D1 /* MXMHttpManager.h */,
+				89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */,
+				89E1344729E94E0900D954D1 /* MXMLoggerService.h */,
+				89E1344829E94E0900D954D1 /* NSString+Compare.h */,
+				89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */,
+				89E1344A29E94E0900D954D1 /* MXMConstants.h */,
+			);
+			path = BasePrivate;
+			sourceTree = "<group>";
+		};
+		89E1344E29E94E0900D954D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89E1344F29E94E0900D954D1 /* MXMVisualBrowse.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D6C5250E25E8FF9C00FFDF86 /* BuildConfig */ = {
+		89E1346929E95ABA00D954D1 /* BuildConfig */ = {
 			isa = PBXGroup;
 			children = (
-				D65E1B6D25EC9CAF00D78764 /* common.xcconfig */,
-				D6C5251025E8FF9C00FFDF86 /* landsd.test.xcconfig */,
-				D6C5251125E8FF9C00FFDF86 /* landsd.prod.xcconfig */,
-				D65F9DE62728F386008E68EE /* kawasaki.prod.xcconfig */,
-				D6C5251225E8FF9C00FFDF86 /* mapxus.test.xcconfig */,
-				D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */,
+				89E1346C29E95ABA00D954D1 /* common.xcconfig */,
+				89E1346B29E95ABA00D954D1 /* kawasaki.prod.xcconfig */,
+				89E1346E29E95ABA00D954D1 /* mapxus.prod.xcconfig */,
+				89E1346F29E95ABA00D954D1 /* landsd.prod.xcconfig */,
+				89E1347029E95ABA00D954D1 /* mapxus.test.xcconfig */,
+				89E1347129E95ABA00D954D1 /* landsd.test.xcconfig */,
 			);
 			path = BuildConfig;
+			sourceTree = "<group>";
+		};
+		F7E8061466C4C89A407D1B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89E1348129E95B1600D954D1 /* MapxusBaseSDK.xcframework */,
+				63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */,
+				02ED9855B55C64D64B073469 /* Pods_MapxusVisualSDKTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D66A7D6921A26C0300A34136 /* Headers */ = {
+		89E1342529E94AB700D954D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D646763C21A412C800018634 /* MXMMapServices+Private.h in Headers */,
-				D66A7DD121A2904C00A34136 /* MXMVisualView.h in Headers */,
-				D698711C232F61E000D34F1A /* MXMNodeGroup.h in Headers */,
-				D69871112328D29B00D34F1A /* MXMVisualSearch.h in Headers */,
-				D698710F2328D29B00D34F1A /* MXMVisualSearchOption.h in Headers */,
-				D65B573221CA334E00142732 /* MXMNode.h in Headers */,
-				D646763B21A412C800018634 /* NSString+Compare.h in Headers */,
-				D6F5C957234C47F700EDCB56 /* MXMLoggerService.h in Headers */,
-				D646763D21A412C800018634 /* MXMConstants.h in Headers */,
-				D646763A21A412C800018634 /* JXJsonFunctionDefine.h in Headers */,
-				D646763921A412C800018634 /* MXMHttpManager.h in Headers */,
-				D66A7D7F21A26C0300A34136 /* MapxusVisualSDK.h in Headers */,
+				89E1345B29E94E0A00D954D1 /* MXMMapServices+Private.h in Headers */,
+				89E1346429E94E0A00D954D1 /* MXMVisualView.h in Headers */,
+				89E1345F29E94E0A00D954D1 /* MXMNodeGroup.h in Headers */,
+				89E1346129E94E0A00D954D1 /* MXMVisualSearch.h in Headers */,
+				89E1345529E94E0A00D954D1 /* MXMVisualSearchOption.h in Headers */,
+				89E1345629E94E0A00D954D1 /* MXMNode.h in Headers */,
+				89E1345829E94E0A00D954D1 /* JXJsonFunctionDefine.h in Headers */,
+				89E1345C29E94E0A00D954D1 /* MXMConstants.h in Headers */,
+				89E1345929E94E0A00D954D1 /* MXMLoggerService.h in Headers */,
+				89E1343929E94AB700D954D1 /* MapxusVisualSDK.h in Headers */,
+				89E1345729E94E0A00D954D1 /* MXMHttpManager.h in Headers */,
+				89E1345A29E94E0A00D954D1 /* NSString+Compare.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D66A7D6D21A26C0300A34136 /* MapxusVisualSDK */ = {
+		89E1342929E94AB700D954D1 /* MapxusVisualSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D66A7D8221A26C0300A34136 /* Build configuration list for PBXNativeTarget "MapxusVisualSDK" */;
+			buildConfigurationList = 89E1343C29E94AB700D954D1 /* Build configuration list for PBXNativeTarget "MapxusVisualSDK" */;
 			buildPhases = (
-				9E5E79B8C558D735DDEB51E1 /* [CP] Check Pods Manifest.lock */,
-				D65E1B6E25EC9DDD00D78764 /* ShellScript */,
-				D66A7D6921A26C0300A34136 /* Headers */,
-				D66A7D6A21A26C0300A34136 /* Sources */,
-				D66A7D6B21A26C0300A34136 /* Frameworks */,
-				D66A7D6C21A26C0300A34136 /* Resources */,
+				F9F78A869A224938F6949AFC /* [CP] Check Pods Manifest.lock */,
+				89E1342529E94AB700D954D1 /* Headers */,
+				89E1342629E94AB700D954D1 /* Sources */,
+				89E1342729E94AB700D954D1 /* Frameworks */,
+				89E1342829E94AB700D954D1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -267,77 +268,78 @@
 			);
 			name = MapxusVisualSDK;
 			productName = MapxusVisualSDK;
-			productReference = D66A7D6E21A26C0300A34136 /* MapxusVisualSDK.framework */;
+			productReference = 89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D66A7D7621A26C0300A34136 /* MapxusVisualSDKTests */ = {
+		89E1343129E94AB700D954D1 /* MapxusVisualSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D66A7D8521A26C0300A34136 /* Build configuration list for PBXNativeTarget "MapxusVisualSDKTests" */;
+			buildConfigurationList = 89E1343F29E94AB700D954D1 /* Build configuration list for PBXNativeTarget "MapxusVisualSDKTests" */;
 			buildPhases = (
-				A574BE9275422F2E18967443 /* [CP] Check Pods Manifest.lock */,
-				D66A7D7321A26C0300A34136 /* Sources */,
-				D66A7D7421A26C0300A34136 /* Frameworks */,
-				D66A7D7521A26C0300A34136 /* Resources */,
+				7AD0893CE3470B90F3786D0C /* [CP] Check Pods Manifest.lock */,
+				89E1342E29E94AB700D954D1 /* Sources */,
+				89E1342F29E94AB700D954D1 /* Frameworks */,
+				89E1343029E94AB700D954D1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D66A7D7A21A26C0300A34136 /* PBXTargetDependency */,
+				89E1343529E94AB700D954D1 /* PBXTargetDependency */,
 			);
 			name = MapxusVisualSDKTests;
 			productName = MapxusVisualSDKTests;
-			productReference = D66A7D7721A26C0300A34136 /* MapxusVisualSDKTests.xctest */;
+			productReference = 89E1343229E94AB700D954D1 /* MapxusVisualSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D66A7D6521A26C0300A34136 /* Project object */ = {
+		89E1342129E94AB700D954D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "MAPHIVE TECHNOLOGY LIMITED.";
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					D61B132B21B51B6D0066E774 = {
-						CreatedOnToolsVersion = 10.1;
+					89E1342929E94AB700D954D1 = {
+						CreatedOnToolsVersion = 14.3;
 					};
-					D66A7D6D21A26C0300A34136 = {
-						CreatedOnToolsVersion = 10.1;
+					89E1343129E94AB700D954D1 = {
+						CreatedOnToolsVersion = 14.3;
 					};
-					D66A7D7621A26C0300A34136 = {
-						CreatedOnToolsVersion = 10.1;
+					89E1348529E95B9800D954D1 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = D66A7D6821A26C0300A34136 /* Build configuration list for PBXProject "MapxusVisualSDK" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 89E1342429E94AB700D954D1 /* Build configuration list for PBXProject "MapxusVisualSDK" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = D66A7D6421A26C0300A34136;
-			productRefGroup = D66A7D6F21A26C0300A34136 /* Products */;
+			mainGroup = 89E1342029E94AB700D954D1;
+			productRefGroup = 89E1342B29E94AB700D954D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D66A7D6D21A26C0300A34136 /* MapxusVisualSDK */,
-				D66A7D7621A26C0300A34136 /* MapxusVisualSDKTests */,
-				D61B132B21B51B6D0066E774 /* MapxusVisualSDK-Universal */,
+				89E1342929E94AB700D954D1 /* MapxusVisualSDK */,
+				89E1343129E94AB700D954D1 /* MapxusVisualSDKTests */,
+				89E1348529E95B9800D954D1 /* MapxusVisualSDK-Universal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D66A7D6C21A26C0300A34136 /* Resources */ = {
+		89E1342829E94AB700D954D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66A7DD421A2923100A34136 /* MXMVisualBrowse.html in Resources */,
+				89E1346029E94E0A00D954D1 /* MXMVisualBrowse.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D66A7D7521A26C0300A34136 /* Resources */ = {
+		89E1343029E94AB700D954D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,34 +349,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E5E79B8C558D735DDEB51E1 /* [CP] Check Pods Manifest.lock */ = {
+		7AD0893CE3470B90F3786D0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapxusVisualSDK-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A574BE9275422F2E18967443 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MapxusVisualSDKTests-checkManifestLockResult.txt",
 			);
@@ -383,20 +371,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D61B132F21B51B770066E774 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"${PROJECT_DIR}/IOS-Universal-Framework_aggregate.sh\"\n";
-		};
-		D65E1B6E25EC9DDD00D78764 /* ShellScript */ = {
+		89E1348929E95B9C00D954D1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,71 +386,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "## Generate the build number using current date and time\nbuildNumber=$(date \"+%Y%m.%d.%H%M\")\n## Set the build number in plist file\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${PROJECT_DIR}/IOS-Universal-Framework_aggregate.sh\"\n";
+		};
+		F9F78A869A224938F6949AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapxusVisualSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D66A7D6A21A26C0300A34136 /* Sources */ = {
+		89E1342629E94AB700D954D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65B573321CA334E00142732 /* MXMNode.m in Sources */,
-				D69871102328D29B00D34F1A /* MXMVisualSearchOption.m in Sources */,
-				D698711D232F61E000D34F1A /* MXMNodeGroup.m in Sources */,
-				D69871142328D29B00D34F1A /* MXMVisualSearch.m in Sources */,
-				D66A7DD221A2904C00A34136 /* MXMVisualView.m in Sources */,
+				89E1346529E94E0A00D954D1 /* MXMVisualSearch.m in Sources */,
+				89E1345D29E94E0A00D954D1 /* MXMNode.m in Sources */,
+				89E1345E29E94E0A00D954D1 /* MXMVisualView.m in Sources */,
+				89E1346229E94E0A00D954D1 /* MXMNodeGroup.m in Sources */,
+				89E1346329E94E0A00D954D1 /* MXMVisualSearchOption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D66A7D7321A26C0300A34136 /* Sources */ = {
+		89E1342E29E94AB700D954D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66A7D7D21A26C0300A34136 /* MapxusVisualSDKTests.m in Sources */,
+				89E1343829E94AB700D954D1 /* MapxusVisualSDKTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D66A7D7A21A26C0300A34136 /* PBXTargetDependency */ = {
+		89E1343529E94AB700D954D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D66A7D6D21A26C0300A34136 /* MapxusVisualSDK */;
-			targetProxy = D66A7D7921A26C0300A34136 /* PBXContainerItemProxy */;
+			target = 89E1342929E94AB700D954D1 /* MapxusVisualSDK */;
+			targetProxy = 89E1343429E94AB700D954D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D61B132D21B51B6D0066E774 /* Debug */ = {
+		89E1343A29E94AB700D954D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
-				ENABLE_BITCODE = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D61B132E21B51B6D0066E774 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
-				ENABLE_BITCODE = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D66A7D8021A26C0300A34136 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */;
+			baseConfigurationReference = 89E1346E29E95ABA00D954D1 /* mapxus.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -494,15 +470,15 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -520,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -530,15 +506,14 @@
 			};
 			name = Debug;
 		};
-		D66A7D8121A26C0300A34136 /* Release */ = {
+		89E1343B29E94AB700D954D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6C5251425E8FF9C00FFDF86 /* mapxus.prod.xcconfig */;
+			baseConfigurationReference = 89E1346E29E95ABA00D954D1 /* mapxus.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -557,15 +532,15 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -577,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -587,20 +562,20 @@
 			};
 			name = Release;
 		};
-		D66A7D8321A26C0300A34136 /* Debug */ = {
+		89E1343D29E94AB700D954D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11C1DA5AA2405DC67E38D9DE /* Pods-MapxusVisualSDK.debug.xcconfig */;
+			baseConfigurationReference = BB40138B5A842DA3B18FD6BA /* Pods-MapxusVisualSDK.debug.xcconfig */;
 			buildSettings = {
-				BITCODE_GENERATION_MODE = marker;
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23.04.19.12.22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = MapxusVisualSDK/Info.plist;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -608,32 +583,33 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.1.2;
+				MARKETING_VERSION = 6.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = NO;
-				SUPPORTS_MACCATALYST = YES;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "";
 			};
 			name = Debug;
 		};
-		D66A7D8421A26C0300A34136 /* Release */ = {
+		89E1343E29E94AB700D954D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56FBCBC52B08FB1D51B724FA /* Pods-MapxusVisualSDK.release.xcconfig */;
+			baseConfigurationReference = 17CFE7D3EA59E24F6E841186 /* Pods-MapxusVisualSDK.release.xcconfig */;
 			buildSettings = {
-				BITCODE_GENERATION_MODE = bitcode;
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 23.04.19.12.22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = MapxusVisualSDK/Info.plist;
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,96 +617,109 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.1.2;
+				MARKETING_VERSION = 6.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = NO;
+				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
-				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "";
-				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 arm64";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = "x86_64 arm64 i386";
 			};
 			name = Release;
 		};
-		D66A7D8621A26C0300A34136 /* Debug */ = {
+		89E1344029E94AB700D954D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BC183440235611F2FCBDF8C /* Pods-MapxusVisualSDKTests.debug.xcconfig */;
+			baseConfigurationReference = 1FC1CB85783DB2E40F02015B /* Pods-MapxusVisualSDKTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
 				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
-				INFOPLIST_FILE = MapxusVisualSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapxus.MapxusVisualSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D66A7D8721A26C0300A34136 /* Release */ = {
+		89E1344129E94AB700D954D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAEA7A8C2FF7F8B21F9F3CF0 /* Pods-MapxusVisualSDKTests.release.xcconfig */;
+			baseConfigurationReference = FDBD4C8D1AF7F8AFB5DD71B6 /* Pods-MapxusVisualSDKTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 23.04.19.12.22;
+				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapxus.MapxusVisualSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89E1348729E95B9800D954D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
-				INFOPLIST_FILE = MapxusVisualSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapxus.MapxusVisualSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89E1348829E95B9800D954D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZNBZ7BZAKZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D61B132C21B51B6D0066E774 /* Build configuration list for PBXAggregateTarget "MapxusVisualSDK-Universal" */ = {
+		89E1342429E94AB700D954D1 /* Build configuration list for PBXProject "MapxusVisualSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D61B132D21B51B6D0066E774 /* Debug */,
-				D61B132E21B51B6D0066E774 /* Release */,
+				89E1343A29E94AB700D954D1 /* Debug */,
+				89E1343B29E94AB700D954D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D66A7D6821A26C0300A34136 /* Build configuration list for PBXProject "MapxusVisualSDK" */ = {
+		89E1343C29E94AB700D954D1 /* Build configuration list for PBXNativeTarget "MapxusVisualSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D66A7D8021A26C0300A34136 /* Debug */,
-				D66A7D8121A26C0300A34136 /* Release */,
+				89E1343D29E94AB700D954D1 /* Debug */,
+				89E1343E29E94AB700D954D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D66A7D8221A26C0300A34136 /* Build configuration list for PBXNativeTarget "MapxusVisualSDK" */ = {
+		89E1343F29E94AB700D954D1 /* Build configuration list for PBXNativeTarget "MapxusVisualSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D66A7D8321A26C0300A34136 /* Debug */,
-				D66A7D8421A26C0300A34136 /* Release */,
+				89E1344029E94AB700D954D1 /* Debug */,
+				89E1344129E94AB700D954D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D66A7D8521A26C0300A34136 /* Build configuration list for PBXNativeTarget "MapxusVisualSDKTests" */ = {
+		89E1348629E95B9800D954D1 /* Build configuration list for PBXAggregateTarget "MapxusVisualSDK-Universal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D66A7D8621A26C0300A34136 /* Debug */,
-				D66A7D8721A26C0300A34136 /* Release */,
+				89E1348729E95B9800D954D1 /* Debug */,
+				89E1348829E95B9800D954D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D66A7D6521A26C0300A34136 /* Project object */;
+	rootObject = 89E1342129E94AB700D954D1 /* Project object */;
 }

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MXMNode.h"
+#import <MapxusVisualSDK/MXMNode.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

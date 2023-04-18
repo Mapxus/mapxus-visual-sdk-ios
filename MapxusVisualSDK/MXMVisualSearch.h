@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MXMVisualSearchOption.h"
-#import "MXMNodeGroup.h"
+#import <MapxusVisualSDK/MXMVisualSearchOption.h>
+#import <MapxusVisualSDK/MXMNodeGroup.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

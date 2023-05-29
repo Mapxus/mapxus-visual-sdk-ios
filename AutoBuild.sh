@@ -82,13 +82,13 @@ CSS_URL=""
 JS_URL=""
 
 if [[ -z $COM ]] && [[ -z $ENV ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.9.0.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.9.0.js"
     XCCONFIG_FILE='BuildConfig/mapxus.prod.xcconfig'
 
 elif [[ -z $COM ]] && [[ $ENV == "-test" ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.9.0-beta.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.9.0-beta.1.js"
     XCCONFIG_FILE='BuildConfig/mapxus.test.xcconfig'
 
 elif [[ $COM == "-landsd" ]] && [[ -z $ENV ]]; then
@@ -106,8 +106,8 @@ elif [[ $COM == "-landsd" ]] && [[ $ENV == "-test" ]]; then
     XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
 
 elif [[ $COM == "-kawasaki" ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.8.1.css"
-    JS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.8.1.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.9.0.css"
+    JS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.9.0.js"
     XCCONFIG_FILE='BuildConfig/kawasaki.prod.xcconfig'
     
     REGION_DISTRIBUTION_PARENT_PATH="${GLOBAL_DISTRIBUTION_PARENT_PATH}/sdk-jp"

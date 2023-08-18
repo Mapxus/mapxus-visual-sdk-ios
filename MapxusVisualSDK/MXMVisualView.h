@@ -65,15 +65,13 @@ Load visual.
 
 /**
  Move close to given latitude and longitude.
- @param buildingId Image belong building id.
- @param floor Image belong floor code.
+ @param floorId Image belong floor code.
  @param latitude Latitude, in degrees.
  @param longitude Longitude, in degrees.
  */
-- (void)moveCloseToBuilding:(NSString *)buildingId
-                      floor:(NSString *)floor
-                   latitude:(double)latitude
-                  longitude:(double)longitude;
+- (void)moveCloseToFloorId:(NSString *)floorId
+                  latitude:(double)latitude
+                 longitude:(double)longitude;
 
 /**
  Detect the viewer's new width and height and resize it.

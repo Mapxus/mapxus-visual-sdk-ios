@@ -13,8 +13,8 @@
 
 + (NSDictionary *)modelCustomPropertyMapper {
     return @{
-             @"floor" : @"floor.code",
-             @"nodes" : @"images",
+             @"floorId" : @[@"floorId", @"floor.id"],
+             @"nodes" : @[@"nodes", @"images"],
              };
 }
 

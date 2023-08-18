@@ -12,11 +12,11 @@
 @implementation MXMNode
 
 + (NSDictionary *)modelCustomPropertyMapper {
-    return @{@"buildingId" : @[@"building.id", @"buildingId"],
-             @"floor" : @[@"floor.code", @"floor"],
-             @"latitude" : @[@"l.lat", @"latitude"],
-             @"longitude" : @[@"l.lon", @"longitude"],
-             @"bearing" : @[@"ca", @"bearing"],
+    return @{@"buildingId" : @[@"buildingId", @"building.id"],
+             @"floorId" : @[@"floorId", @"floor.id"],
+             @"latitude" : @[@"latitude", @"lat", @"l.lat"],
+             @"longitude" : @[@"longitude", @"lon", @"l.lon"],
+             @"bearing" : @[@"bearing", @"ca"],
              };
 }
 
@@ -27,15 +27,15 @@
 
 - (NSDictionary<NSString*, id> *)toJson
 {
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    dic[@"key"] = self.key;
-    dic[@"buildingId"] = self.buildingId;
-    dic[@"floor"] = self.floor;
-    dic[@"latitude"] = @(self.latitude);
-    dic[@"longitude"] = @(self.longitude);
-    dic[@"bearing"] = @(self.bearing);
+    NSMutableDictionary *dic = [self yy_modelToJSONObject];
+  
+//    dic[@"key"] = self.key;
+//    dic[@"buildingId"] = self.buildingId;
+//    dic[@"latitude"] = @(self.latitude);
+//    dic[@"longitude"] = @(self.longitude);
+//    dic[@"bearing"] = @(self.bearing);
 
-    return [dic copy];
+    return dic;
 }
 
 - (NSString *)description

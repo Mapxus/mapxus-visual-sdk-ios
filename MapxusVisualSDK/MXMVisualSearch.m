@@ -23,12 +23,12 @@
     switch (option.scope) {
             case MXMVisualSearchScopeDetail:
         {
-            str = [NSString stringWithFormat:@"{\"query\":\"query {\\n  building(key:\\\"%@\\\"){    \\n    floor{\\n      code\\n    }\\n    images{\\n      key\\n      l{\\n        lat\\n        lon\\n      }\\n      building{\\n        id\\n      }\\n      floor{\\n        code\\n      }\\n      ca\\n    }\\n  }\\n}\\n\"}", option.buildingId];
+            str = [NSString stringWithFormat:@"{\"query\":\"query {\\n  building(key:\\\"%@\\\"){    \\n    floor{\\n      id\\n  code\\n    }\\n    images{\\n      key\\n      l{\\n        lat\\n        lon\\n      }\\n      building{\\n        id\\n      }\\n      floor{\\n        id\\n  code\\n      }\\n      ca\\n    }\\n  }\\n}\\n\"}", option.buildingId];
             break;
         }
             case MXMVisualSearchScopeSimple:
         {
-            str = [NSString stringWithFormat:@"{\"query\":\"query {\\n  building(key:\\\"%@\\\"){    \\n    floor{\\n      code\\n    }\\n }\\n}\\n\"}", option.buildingId];
+            str = [NSString stringWithFormat:@"{\"query\":\"query {\\n  building(key:\\\"%@\\\"){    \\n    floor{\\n      id\\n  code\\n    }\\n }\\n}\\n\"}", option.buildingId];
             break;
         }
         default:

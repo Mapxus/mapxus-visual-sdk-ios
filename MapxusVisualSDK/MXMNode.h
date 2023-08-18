@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MXMNode : NSObject
 /// Unique key of the node.
 @property (nonatomic, strong) NSString *key;
+/// The floor where the node is located.
+@property (nonatomic, strong) NSString *floorId;
 /// The building where the node is located.
 @property (nonatomic, strong) NSString *buildingId;
-/// The floor where the node is located.
-@property (nonatomic, strong) NSString *floor;
 /// Latitude in WGS84 datum, measured in degrees.
 @property (nonatomic, assign) double latitude;
 /// Longitude in WGS84 datum, measured in degrees.

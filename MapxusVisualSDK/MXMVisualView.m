@@ -65,7 +65,7 @@
     }
     [js appendString:@"visualView.on('loadingchanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'loadingchanged', loadingchanged:e}); });"];
     [js appendString:@"visualView.on('bearingchanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'bearingchanged', bearing:e}); });"];
-    [js appendString:@"visualView.on('nodechanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'nodechanged', buildingId:e.building.id, floor:e.floor.code, lat:e.latLon.lat, lon:e.latLon.lon, ca:e.ca, key:e.key }); });"];
+    [js appendString:@"visualView.on('nodechanged', function(e){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'nodechanged', buildingId:e.building.id, floorId:e.floor.id, latitude:e.latLon.lat, longitude:e.latLon.lon, bearing:e.ca, key:e.key }); });"];
     [js appendString:@"visualView.renderComplete(function(){ window.webkit.messageHandlers.MXMVisualEvent.postMessage({type:'renderComplete'}); });"];
     [self executeJS:js];
 }
@@ -80,9 +80,9 @@
     [self executeJS:[NSString stringWithFormat:@"visualView.moveToKey('%@')", key]];
 }
 
-- (void)moveCloseToBuilding:(NSString *)buildingId floor:(NSString *)floor latitude:(double)latitude longitude:(double)longitude
+- (void)moveCloseToFloorId:(NSString *)floorId latitude:(double)latitude longitude:(double)longitude
 {
-    [self executeJS:[NSString stringWithFormat:@"visualView.moveCloseTo(%@, %@, '%@', '%@', 20)", @(latitude), @(longitude), floor, buildingId]];
+    [self executeJS:[NSString stringWithFormat:@"visualView.moveCloseTo(%@, %@, '%@', '%@', 20)", @(latitude), @(longitude), floorId, @""]];
 }
 
 - (void)resize
@@ -214,14 +214,13 @@
     else if ([body[@"type"] isEqualToString:@"nodechanged"]) {
         
         if ([self.delegate respondsToSelector:@selector(visualView:didNodeChanged:)]) {
-            // body dictionary is get from web, so it is not same with [MXMNode toJson]
-            MXMNode *node = [[MXMNode alloc] init];
-            node.key = DecodeStringFromDic(body, @"key");
-            node.buildingId = DecodeStringFromDic(body, @"buildingId");
-            node.floor = DecodeStringFromDic(body, @"floor");
-            node.latitude = [DecodeNumberFromDic(body, @"lat") doubleValue];
-            node.longitude = [DecodeNumberFromDic(body, @"lon") doubleValue];
-            node.bearing = [DecodeNumberFromDic(body, @"ca") doubleValue];
+          NSLog(@"%@", body);
+            MXMNode *node = [MXMNode creatNodeFrom:body];
+//            node.key = DecodeStringFromDic(body, @"key");
+//            node.buildingId = DecodeStringFromDic(body, @"buildingId");
+//            node.latitude = [DecodeNumberFromDic(body, @"lat") doubleValue];
+//            node.longitude = [DecodeNumberFromDic(body, @"lon") doubleValue];
+//            node.bearing = [DecodeNumberFromDic(body, @"ca") doubleValue];
             [self.delegate visualView:self didNodeChanged:node];
         }
     }

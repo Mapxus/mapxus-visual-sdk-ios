@@ -65,7 +65,7 @@ Load visual.
 
 /**
  Move close to given latitude and longitude.
- @param floorId Image belong floor code.
+ @param floorId Image belong floorId.
  @param latitude Latitude, in degrees.
  @param longitude Longitude, in degrees.
  */

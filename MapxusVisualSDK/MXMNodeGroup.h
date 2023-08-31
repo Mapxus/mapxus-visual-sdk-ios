@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface MXMNodeGroup : NSObject
 
+/// The floor where the nodes print on
 @property (nonatomic, strong) NSString *floorId;
 /// Printting nodes
 @property (nonatomic, strong) NSArray<MXMNode *> *nodes;

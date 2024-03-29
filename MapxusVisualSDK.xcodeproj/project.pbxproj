@@ -62,6 +62,7 @@
 		17CFE7D3EA59E24F6E841186 /* Pods-MapxusVisualSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.release.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.release.xcconfig"; sourceTree = "<group>"; };
 		1FC1CB85783DB2E40F02015B /* Pods-MapxusVisualSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89446B552BB69E15005B0D17 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		898E9BF82B205BA500345D0C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapxusVisualSDK.h; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		89E1342029E94AB700D954D1 = {
 			isa = PBXGroup;
 			children = (
+				89446B552BB69E15005B0D17 /* CHANGELOG.md */,
 				89E1346829E95ABA00D954D1 /* Gemfile */,
 				89E1346929E95ABA00D954D1 /* BuildConfig */,
 				89E1347329E95ABA00D954D1 /* AutoBuild.sh */,

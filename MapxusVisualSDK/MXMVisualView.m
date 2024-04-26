@@ -162,7 +162,6 @@
  * Handle the full load of the webview. Any command that was queued so far is executed.
  */
 - (void)webView:(WKWebView *)_webView didFinishNavigation:(WKNavigation *)navigation {
-    NSLog(@"didFinishNavigation");
     while ([_jsQueue count] > 0) {
         NSString* js = [_jsQueue objectAtIndex:0];
         [_jsQueue removeObjectAtIndex:0];
@@ -214,7 +213,6 @@
     else if ([body[@"type"] isEqualToString:@"nodechanged"]) {
         
         if ([self.delegate respondsToSelector:@selector(visualView:didNodeChanged:)]) {
-          NSLog(@"%@", body);
             MXMNode *node = [MXMNode creatNodeFrom:body];
 //            node.key = DecodeStringFromDic(body, @"key");
 //            node.buildingId = DecodeStringFromDic(body, @"buildingId");

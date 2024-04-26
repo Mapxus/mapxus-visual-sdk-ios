@@ -1,18 +1,15 @@
 //
 //  MXMMapServices+Private.h
-//  MapxusMapSDK
+//  MapxusBaseSDK
 //
-//  Created by Chenghao Guo on 2018/7/16.
-//  Copyright © 2018年 MAPHIVE TECHNOLOGY LIMITED. All rights reserved.
+//  Created by guochenghao on 2024/4/26.
 //
 
-#import <MapxusBaseSDK/MapxusBaseSDK.h>
+#import <MapxusBaseSDK/MXMMapServices.h>
 
 @interface MXMMapServices ()
 
 @property (nonatomic, strong) NSString *apiKey;
 @property (nonatomic, strong) NSString *secret;
-
-- (void)getTokenComplete:(void (^)(NSString * token))complete;
 
 @end

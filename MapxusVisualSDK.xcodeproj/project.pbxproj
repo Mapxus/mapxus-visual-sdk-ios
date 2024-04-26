@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		888F85238748BB36D4784505 /* Pods_MapxusVisualSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED9855B55C64D64B073469 /* Pods_MapxusVisualSDKTests.framework */; };
 		898E9BF92B205BAC00345D0C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 898E9BF82B205BA500345D0C /* PrivacyInfo.xcprivacy */; };
+		89AAF5982BDB91FB00CB6B33 /* MXMMapServices+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 89AAF5972BDB91FB00CB6B33 /* MXMMapServices+Private.h */; };
 		89E1343329E94AB700D954D1 /* MapxusVisualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */; };
 		89E1343829E94AB700D954D1 /* MapxusVisualSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1343729E94AB700D954D1 /* MapxusVisualSDKTests.m */; };
 		89E1343929E94AB700D954D1 /* MapxusVisualSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,8 +32,6 @@
 		89E1345729E94E0A00D954D1 /* MXMHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344529E94E0900D954D1 /* MXMHttpManager.h */; };
 		89E1345829E94E0A00D954D1 /* JXJsonFunctionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */; };
 		89E1345929E94E0A00D954D1 /* MXMLoggerService.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344729E94E0900D954D1 /* MXMLoggerService.h */; };
-		89E1345A29E94E0A00D954D1 /* NSString+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344829E94E0900D954D1 /* NSString+Compare.h */; };
-		89E1345B29E94E0A00D954D1 /* MXMMapServices+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */; };
 		89E1345C29E94E0A00D954D1 /* MXMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E1344A29E94E0900D954D1 /* MXMConstants.h */; };
 		89E1345D29E94E0A00D954D1 /* MXMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1344B29E94E0900D954D1 /* MXMNode.m */; };
 		89E1345E29E94E0A00D954D1 /* MXMVisualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E1344C29E94E0900D954D1 /* MXMVisualView.m */; };
@@ -64,6 +63,7 @@
 		63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89446B552BB69E15005B0D17 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		898E9BF82B205BA500345D0C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		89AAF5972BDB91FB00CB6B33 /* MXMMapServices+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXMMapServices+Private.h"; sourceTree = "<group>"; };
 		89E1342A29E94AB700D954D1 /* MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E1342D29E94AB700D954D1 /* MapxusVisualSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapxusVisualSDK.h; sourceTree = "<group>"; };
 		89E1343229E94AB700D954D1 /* MapxusVisualSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapxusVisualSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +73,6 @@
 		89E1344529E94E0900D954D1 /* MXMHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMHttpManager.h; sourceTree = "<group>"; };
 		89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXJsonFunctionDefine.h; sourceTree = "<group>"; };
 		89E1344729E94E0900D954D1 /* MXMLoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMLoggerService.h; sourceTree = "<group>"; };
-		89E1344829E94E0900D954D1 /* NSString+Compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Compare.h"; sourceTree = "<group>"; };
-		89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXMMapServices+Private.h"; sourceTree = "<group>"; };
 		89E1344A29E94E0900D954D1 /* MXMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMConstants.h; sourceTree = "<group>"; };
 		89E1344B29E94E0900D954D1 /* MXMNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMNode.m; sourceTree = "<group>"; };
 		89E1344C29E94E0900D954D1 /* MXMVisualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMVisualView.m; sourceTree = "<group>"; };
@@ -193,8 +191,7 @@
 				89E1344529E94E0900D954D1 /* MXMHttpManager.h */,
 				89E1344629E94E0900D954D1 /* JXJsonFunctionDefine.h */,
 				89E1344729E94E0900D954D1 /* MXMLoggerService.h */,
-				89E1344829E94E0900D954D1 /* NSString+Compare.h */,
-				89E1344929E94E0900D954D1 /* MXMMapServices+Private.h */,
+				89AAF5972BDB91FB00CB6B33 /* MXMMapServices+Private.h */,
 				89E1344A29E94E0900D954D1 /* MXMConstants.h */,
 			);
 			path = BasePrivate;
@@ -239,7 +236,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E1345B29E94E0A00D954D1 /* MXMMapServices+Private.h in Headers */,
 				89E1346429E94E0A00D954D1 /* MXMVisualView.h in Headers */,
 				89E1345F29E94E0A00D954D1 /* MXMNodeGroup.h in Headers */,
 				89E1346129E94E0A00D954D1 /* MXMVisualSearch.h in Headers */,
@@ -249,8 +245,8 @@
 				89E1345C29E94E0A00D954D1 /* MXMConstants.h in Headers */,
 				89E1345929E94E0A00D954D1 /* MXMLoggerService.h in Headers */,
 				89E1343929E94AB700D954D1 /* MapxusVisualSDK.h in Headers */,
+				89AAF5982BDB91FB00CB6B33 /* MXMMapServices+Private.h in Headers */,
 				89E1345729E94E0A00D954D1 /* MXMHttpManager.h in Headers */,
-				89E1345A29E94E0A00D954D1 /* NSString+Compare.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

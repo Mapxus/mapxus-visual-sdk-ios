@@ -10,31 +10,44 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Represents a node in the navigation graph.
- */
+/// `MXMNode` represents a node in the navigation graph.
 @interface MXMNode : NSObject
-/// Unique key of the node.
+
+
+/// The unique key of the node.
 @property (nonatomic, strong) NSString *key;
-/// The floor where the node is located.
+
+
+/// The ID of the floor where the node is located.
 @property (nonatomic, strong) NSString *floorId;
-/// The building where the node is located.
+
+
+/// The ID of the building where the node is located.
 @property (nonatomic, strong) NSString *buildingId;
-/// Latitude in WGS84 datum, measured in degrees.
+
+
+/// The latitude of the node in WGS84 datum, measured in degrees.
 @property (nonatomic, assign) double latitude;
-/// Longitude in WGS84 datum, measured in degrees.
+
+
+/// The longitude of the node in WGS84 datum, measured in degrees.
 @property (nonatomic, assign) double longitude;
-/// Compass angle, measured in degrees clockwise with respect to north.
+
+
+/// The compass angle of the node, measured in degrees clockwise with respect to north.
 @property (nonatomic, assign) double bearing;
 
-/// Convert from dictionary to MXMNode object
-/// @param nodeDic node dictionary
+
+/// This class method creates an `MXMNode` object from a dictionary.
+///
+/// @param nodeDic The dictionary containing the node data.
+/// @return An `MXMNode` object.
 + (MXMNode *)creatNodeFrom:(NSDictionary<NSString*, id> *)nodeDic;
 
-/**
- Change the MXMNode object to NSDictionary, the key is the string of paramer's name
- @return The dictionary contain paramers
- */
+
+/// This instance method converts the `MXMNode` object to a dictionary. The keys in the dictionary are the names of the parameters.
+///
+/// @return A dictionary containing the parameters of the `MXMNode` object.
 - (NSDictionary<NSString*, id> *)toJson;
 
 @end

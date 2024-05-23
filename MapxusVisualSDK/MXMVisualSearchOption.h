@@ -8,27 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- The level of detail of the visual data
- - MXMVisualSearchScopeSimple: Just receive node IDs on the floor
- - MXMVisualSearchScopeDetail: Receive all detail of the node
- */
+/// This enumeration defines the level of detail for the visual data.
 typedef NS_ENUM(NSUInteger, MXMVisualSearchScopeType) {
-    MXMVisualSearchScopeSimple = 0,
-    MXMVisualSearchScopeDetail
+  /// Only the node IDs on the floor are received.
+  MXMVisualSearchScopeSimple = 0,
+  /// All details of the node are received.
+  MXMVisualSearchScopeDetail
 };
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Search visual data in building infomation class
- */
+/// `MXMVisualBuildingSearchOption` is a class that encapsulates the options for a visual data search in a building.
 @interface MXMVisualBuildingSearchOption : NSObject
 
-/// The buildingId which will search in
+
+/// The ID of the building to be searched.
 @property (nonatomic, strong) NSString *buildingId;
-/// The level of detail of the visual data
+
+
+/// The level of detail for the visual data.
 @property (nonatomic, assign) MXMVisualSearchScopeType scope;
 
 @end

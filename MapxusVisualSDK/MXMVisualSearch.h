@@ -14,19 +14,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MXMVisualSearchDelegate;
 
-/**
- Visual data search service
- */
+/// `MXMVisualSearch` is a class that provides a service for searching visual data.
 @interface MXMVisualSearch : NSObject
 
-/// The object that acts as the delegate of the visual search
+
+/// The delegate object that will receive the search results.
 @property (nonatomic, weak) id<MXMVisualSearchDelegate> delegate;
 
-/**
- Search visual data in building
- @param option Search parameter
- @return Network request task id
- */
+
+/// This method initiates a search for visual data in a building.
+/// 
+/// @param option The parameters for the search.
+/// @return The ID of the network request task.
 - (NSInteger)searchVisualDataInBuilding:(MXMVisualBuildingSearchOption *)option;
 
 @end
@@ -35,17 +34,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - MXMVisualSearchDelegate
 
-/**
- Visual data search delegate
- */
+/// The delegate protocol for receiving search results from `MXMVisualSearch`.
 @protocol MXMVisualSearchDelegate <NSObject>
 
-/**
- The callback method that visual data search in building
- @param searcher The object who send the request
- @param list Visual data list
- @param error Request error
- */
+
+/// This method is called when the search for visual data in a building is complete.
+///
+/// @param searcher The `MXMVisualSearch` object that performed the search.
+/// @param list The list of visual data results.
+/// @param error Any error that occurred during the search.
 - (void)onGetVisualDataInBuilding:(MXMVisualSearch *)searcher result:(nullable NSArray<MXMNodeGroup *> *)list error:(nullable NSError *)error;
 
 @end

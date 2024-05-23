@@ -11,14 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Node list class
- */
+/// `MXMNodeGroup` is a class that represents a list of nodes.
 @interface MXMNodeGroup : NSObject
 
-/// The floor where the nodes print on
+
+/// The ID of the floor where the nodes are printed.
 @property (nonatomic, strong) NSString *floorId;
-/// Printting nodes
+
+
+/// The nodes that are being printed.
 @property (nonatomic, strong) NSArray<MXMNode *> *nodes;
 
 @end

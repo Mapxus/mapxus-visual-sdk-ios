@@ -39,7 +39,7 @@ REGION_DISTRIBUTION_ROOT_PATH="/mapxus-visual-sdk-ios"
 # 分发目录下载源
 REGION_DISTRIBUTION_URL='https://github.com/Mapxus/mapxus-visual-sdk-ios.git'
 # 签发证书
-CER_SHA_1='277D3D123EB976C62BA00951C258A3FA235FFA11'
+CER_SHA_1='3237CC2300F47D6DF17367B086B164D21D7AB28B'
 
 
 ############## 参数获取 ##############
@@ -63,6 +63,8 @@ do
             COM="-landsd"
         elif [[ $OPTARG == "kawasaki" ]]; then
             COM="-kawasaki"
+        elif [[ $OPTARG == "stem" ]]; then
+            COM="-stem"
         fi
         ;;
         ?)
@@ -106,6 +108,11 @@ elif [[ $COM == "-landsd" ]] && [[ $ENV == "-test" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.css"
     JS_URL="https:\/\/web-sdk.mapxus.com\/test\/mapxus-visual-1.8.1-beta.1-landsd.js"
     XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
+    
+elif [[ $COM == "-stem" ]]; then
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-beta.1-stem.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-beta.1-stem.js"
+    XCCONFIG_FILE='BuildConfig/stem.prod.xcconfig'
 
 elif [[ $COM == "-kawasaki" ]]; then
     CSS_URL="https:\/\/web-sdk.mapxus.co.jp\/prod\/mapxus-visual-1.10.0.css"

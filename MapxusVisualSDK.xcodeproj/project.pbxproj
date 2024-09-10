@@ -61,6 +61,7 @@
 		17CFE7D3EA59E24F6E841186 /* Pods-MapxusVisualSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDK.release.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDK/Pods-MapxusVisualSDK.release.xcconfig"; sourceTree = "<group>"; };
 		1FC1CB85783DB2E40F02015B /* Pods-MapxusVisualSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapxusVisualSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-MapxusVisualSDKTests/Pods-MapxusVisualSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63ED1474C379D3C91CD43C9C /* Pods_MapxusVisualSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapxusVisualSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892FE0642C8E9E3F00C6EB66 /* stem.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = stem.prod.xcconfig; sourceTree = "<group>"; };
 		89446B552BB69E15005B0D17 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		898E9BF82B205BA500345D0C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		89AAF5972BDB91FB00CB6B33 /* MXMMapServices+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXMMapServices+Private.h"; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 				89E1346B29E95ABA00D954D1 /* kawasaki.prod.xcconfig */,
 				89E1346E29E95ABA00D954D1 /* mapxus.prod.xcconfig */,
 				89E1346F29E95ABA00D954D1 /* landsd.prod.xcconfig */,
+				892FE0642C8E9E3F00C6EB66 /* stem.prod.xcconfig */,
 				89E1347029E95ABA00D954D1 /* mapxus.test.xcconfig */,
 				89E1347129E95ABA00D954D1 /* landsd.test.xcconfig */,
 			);

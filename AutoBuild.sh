@@ -110,8 +110,8 @@ elif [[ $COM == "-landsd" ]] && [[ $ENV == "-test" ]]; then
     XCCONFIG_FILE='BuildConfig/landsd.test.xcconfig'
     
 elif [[ $COM == "-stem" ]]; then
-    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-beta.1-stem.css"
-    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.8.1-beta.1-stem.js"
+    CSS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.10.0-stem.1.css"
+    JS_URL="https:\/\/web-sdk.mapxus.com\/prod\/mapxus-visual-1.10.0-stem.1.js"
     XCCONFIG_FILE='BuildConfig/stem.prod.xcconfig'
 
 elif [[ $COM == "-kawasaki" ]]; then
